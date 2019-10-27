@@ -5,7 +5,6 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 import { ActionSheetController } from '@ionic/angular';
 
-
 @Component({
   selector: 'app-tab1',
   templateUrl: './tab1.page.html',
@@ -19,7 +18,6 @@ jsonQRcuenta = "5583266381";
 jsonQRconcepto = "Concepto";
 jsonQRreferencia = "0001"
 //Fin de Variable JSON QR
-
 
 //JSON QR
 obj = {
