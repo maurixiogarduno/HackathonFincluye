@@ -64,7 +64,6 @@
           </ion-refresher-content>
         </ion-refresher>
     <div *ngIf="items.length > 0" class="list-mini">
-      <ion-card>
         <ion-item *ngFor="let item of items" [routerLink]="['/details', item.payload.doc.id]" class="animated bounceInRight">
           <ion-thumbnail slot="start">
             <img [src]="item.payload.doc.data().image">
@@ -72,7 +71,6 @@
           <ion-label>{{item.payload.doc.data().title}}</ion-label>
           <ion-button fill="clear" slot="end">Detalles</ion-button>
         </ion-item>
-      </ion-card>
     </div>
     <div *ngIf="items.length == 0" class="empty-list">
       Crea un nuevo CoDí

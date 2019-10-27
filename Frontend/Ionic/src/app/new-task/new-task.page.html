@@ -3,7 +3,7 @@
       <ion-buttons slot="start">
         <ion-back-button defaultHref="home"></ion-back-button>
       </ion-buttons>
-      <ion-title>Nuevo Contacto</ion-title>
+      <ion-title>Nuevo CoDi</ion-title>
     </ion-toolbar>
   </ion-header>
   
@@ -21,26 +21,26 @@
       </ion-row>
     </div>
     <form [formGroup]="validations_form" (ngSubmit)="onSubmit(validations_form.value)">
+        <ion-item>
+            <ion-label>Nombre:</ion-label>
+            <ion-input type="text" formControlName="grasa"></ion-input>
+          </ion-item>
       <ion-item>
-        <ion-label>Nombre:</ion-label>
+        <ion-label>Monto:</ion-label>
         <ion-input type="text" formControlName="title"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label>Estado:</ion-label>
+        <ion-label>Concepto:</ion-label>
         <ion-input type="text" formControlName="estado"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label>Azucar:</ion-label>
+        <ion-label>Referencia:</ion-label>
         <ion-input type="text" formControlName="azucar"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label>Grasa Saturada:</ion-label>
-        <ion-input type="text" formControlName="grasa"></ion-input>
       </ion-item>
       <ion-item>
           <ion-textarea formControlName="description" placeholder="Enter more information here..."></ion-textarea>
       </ion-item>
-      <ion-button class="submit-btn" expand="block" type="submit">Agregar</ion-button>
+      <ion-button class="submit-btn" expand="block" type="submit">Guardar</ion-button>
     </form>
   
     <!-- <form [formGroup]="validations_form" (ngSubmit)="onSubmitInfo(validations_form.value)">
