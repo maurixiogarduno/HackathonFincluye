@@ -35,6 +35,7 @@
     "cordova-ios": "5.0.1",
     "cordova-plugin-inappbrowser": "^3.1.0",
     "cordova-plugin-ionic-webview": "^4.1.2",
+    "cordova-plugin-ios-camera-permissions": "^1.2.0",
     "cordova-plugin-telerik-imagepicker": "^2.3.3",
     "cordova-sqlite-storage": "^3.4.0",
     "core-js": "^2.5.4",
@@ -88,7 +89,13 @@
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-keyboard": {},
       "cordova-plugin-inappbrowser": {},
-      "cordova-sqlite-storage": {}
+      "cordova-sqlite-storage": {},
+      "cordova-plugin-ios-camera-permissions": {
+        "CAMERA_USAGE_DESCRIPTION": "This app needs camera access",
+        "MICROPHONE_USAGE_DESCRIPTION": "This app needs microphone access",
+        "PHOTOLIBRARY_ADD_USAGE_DESCRIPTION": "This app needs write-access to photo library",
+        "PHOTOLIBRARY_USAGE_DESCRIPTION": "This app needs read/write-access photo library access"
+      }
     },
     "platforms": [
       "browser",
