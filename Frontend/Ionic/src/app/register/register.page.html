@@ -6,7 +6,6 @@
   <div class="padding ion-text-center">
     
   <br>
-  <img src="../../assets/icon/favicon.png" alt="" width = "128" height = "128">
   <h3 color="primary">Crear cuenta</h3>
 
   <form class="form" [formGroup]="validations_form" (ngSubmit)="tryRegister(validations_form.value)">
@@ -22,7 +21,10 @@
         </div>
       </ng-container>
     </div>
-
+    <ion-item color="dark">
+      <ion-label position="stacked">Username:</ion-label>
+      <ion-input type="text" placeholder="Ingresa un nombre se usuario"></ion-input>
+    </ion-item>
     <ion-item color="dark">
       <ion-label position="stacked">Password:</ion-label>
       <ion-input type="password" placeholder="Ingresa tu contraseña" formControlName="password"></ion-input>
@@ -34,6 +36,14 @@
         </div>
       </ng-container>
     </div>
+    <ion-item color="dark">
+      <ion-label position="stacked">Nombre:</ion-label>
+      <ion-input type="text" placeholder="Ingresa tu nombre"></ion-input>
+    </ion-item>
+    <ion-item color="dark">
+      <ion-label position="stacked">Apellido:</ion-label>
+      <ion-input type="text" placeholder="Ingresa tu apellido"></ion-input>
+    </ion-item>
 
     <ion-button class="submit-btn" expand="block" type="submit">Registrarme</ion-button>
     <label class="error-message">{{errorMessage}}</label>
