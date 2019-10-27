@@ -10,7 +10,8 @@ import { ActionSheetController } from '@ionic/angular';
   templateUrl: './qr.page.html',
   styleUrls: ['./qr.page.scss'],
 })
-export class QrPage implements OnInit {qrData = "0"; //Para integrar al createdCode
+export class QrPage implements OnInit {
+qrData = "0"; //Para integrar al createdCode
 createdCode = "0"; //Crea el QR
 
 //Variables JSON QR

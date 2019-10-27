@@ -22,27 +22,15 @@
   </div>
   <form [formGroup]="validations_form" (ngSubmit)="onSubmit(validations_form.value)">
     <ion-item>
-      <ion-label>Nombre:</ion-label>
+      <ion-label>Producto:</ion-label>
       <ion-input type="text" formControlName="title"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label>Estado:</ion-label>
+      <ion-label>Precio:</ion-label>
       <ion-input type="text" formControlName="estado"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label>Sodio:</ion-label>
-      <ion-input type="text" formControlName="sodio"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label>Azucar:</ion-label>
-      <ion-input type="text" formControlName="azucar"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label>Grasa Saturada:</ion-label>
-      <ion-input type="text" formControlName="grasa"></ion-input>
-    </ion-item>
-    <ion-item>
-        <ion-textarea formControlName="description" placeholder="Enter more information here..."></ion-textarea>
+        <ion-textarea formControlName="description" placeholder="Ingrese más información aquí..."></ion-textarea>
     </ion-item>
     <ion-button class="submit-btn" expand="block" type="submit">Agregar</ion-button>
   </form>

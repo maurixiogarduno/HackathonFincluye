@@ -61,6 +61,7 @@ export class AppComponent {
       icon:'contact'
     }
   ];
+  dark = false;
 
   logout(){
     this.authService.doLogout()

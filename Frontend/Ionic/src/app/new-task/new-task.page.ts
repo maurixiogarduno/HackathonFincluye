@@ -32,13 +32,10 @@ export class NewTaskPage implements OnInit {
   }
 
   resetFields(){
-    this.image = "./assets/imgs/diet.png";
+    this.image = "./assets/img.jpg";
     this.validations_form = this.formBuilder.group({
       title: new FormControl('', Validators.required),
       estado: new FormControl('', Validators.required),
-      sodio: new FormControl('', Validators.required),
-      azucar: new FormControl('', Validators.required),
-      grasa: new FormControl('', Validators.required),
       description: new FormControl('', Validators.required),
     });
   }
@@ -47,8 +44,6 @@ export class NewTaskPage implements OnInit {
     let data = {
       title: value.title,
       estado: value.estado,
-      sodio: value.sodio,
-      azucar: value.azucar,
       description: value.description,
       image: this.image
     }
