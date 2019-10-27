@@ -23,7 +23,6 @@ export class FirebaseService {
       this.afs.collection('people').doc(currentUser.uid).collection('tasks').add({
         title: value.title,
         estado: value.estado,
-        sodio: value.sodio,
         azucar: value.azucar,
         description: value.description,
         image: value.image
@@ -127,16 +126,16 @@ export class FirebaseService {
 
   //meetup
     //Función para traer todo la data
-    getAll(){
-      return new Promise<any>((resolve, reject) => {
-        this.afAuth.user.subscribe(currentUser => {
-          if(currentUser){
-            this.snapshotChangesSubscription = this.afs.collection('people').doc().collection('tasks').snapshotChanges();
-            resolve(this.snapshotChangesSubscription);
-          }
-        })
-      })
-    }
+    // getAll(){
+    //   return new Promise<any>((resolve, reject) => {
+    //     this.afAuth.user.subscribe(currentUser => {
+    //       if(currentUser){
+    //         this.snapshotChangesSubscription = this.afs.collection('people').doc().collection('tasks').snapshotChanges();
+    //         resolve(this.snapshotChangesSubscription);
+    //       }
+    //     })
+    //   })
+    // }
 
       //Funcion para guardar informacion del usuario registrado
   createUserInfo(value){

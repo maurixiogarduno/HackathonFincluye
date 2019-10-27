@@ -7,8 +7,8 @@ import { IonicModule } from '@ionic/angular';
 
 import { Tab2Page } from './tab2.page';
 
-//Para Google Maps
-import { AgmCoreModule } from '@agm/core';
+//Para QR
+import { NgxQRCodeModule } from 'ngx-qrcode2';
 
 const routes: Routes = [
   {
@@ -23,9 +23,7 @@ const routes: Routes = [
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes),
-    AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAsItvwpqZuZQcbDyM6Dy2cu_3Hoo_V1_I' // Api Key para Google Maps
-    })
+    NgxQRCodeModule
   ],
   declarations: [Tab2Page]
 })

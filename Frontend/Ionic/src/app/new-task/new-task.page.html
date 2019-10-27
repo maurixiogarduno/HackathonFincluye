@@ -20,7 +20,7 @@
         </ion-col>
       </ion-row>
     </div>
-    <!-- <form [formGroup]="validations_form" (ngSubmit)="onSubmit(validations_form.value)">
+    <form [formGroup]="validations_form" (ngSubmit)="onSubmit(validations_form.value)">
       <ion-item>
         <ion-label>Nombre:</ion-label>
         <ion-input type="text" formControlName="title"></ion-input>
@@ -41,9 +41,9 @@
           <ion-textarea formControlName="description" placeholder="Enter more information here..."></ion-textarea>
       </ion-item>
       <ion-button class="submit-btn" expand="block" type="submit">Agregar</ion-button>
-    </form> -->
+    </form>
   
-    <form [formGroup]="validations_form" (ngSubmit)="onSubmitInfo(validations_form.value)">
+    <!-- <form [formGroup]="validations_form" (ngSubmit)="onSubmitInfo(validations_form.value)">
       <ion-item>
         <ion-label>Nombre:</ion-label>
         <ion-input type="text" formControlName="name"></ion-input>
@@ -53,5 +53,5 @@
         <ion-input type="text" formControlName="last"></ion-input>
       </ion-item>
       <ion-button class="submit-btn" expand="block" type="submit">Guardar</ion-button>
-    </form>
+    </form> -->
   </ion-content>
