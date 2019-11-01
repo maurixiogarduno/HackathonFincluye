@@ -8,7 +8,7 @@
         <ion-icon slot="icon-only" name="add"></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title>Tarjetas</ion-title>
+    <ion-title>Ingresos</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -17,20 +17,20 @@
       <form #employeeForm="ngForm" (ngSubmit)="addEmployee(employeeForm)">
         <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]="employeeService.selectedEmployee._id">
         <ion-item>
-          <ion-label position="stacked">Nombre:</ion-label>
-          <ion-input type="text" name="name" #name="ngModel" [(ngModel)]="employeeService.selectedEmployee.name" placeholder="Enter your FullName"></ion-input>
+          <ion-label position="stacked">Producto:</ion-label>
+          <ion-input type="text" name="name" #name="ngModel" [(ngModel)]="employeeService.selectedEmployee.name"></ion-input>
         </ion-item>
         <ion-item>
-            <ion-label position="stacked">Puesto:</ion-label>
-            <ion-input type="text" name="position" #name="ngModel" [(ngModel)]="employeeService.selectedEmployee.position" placeholder="Enter your Position"></ion-input>
+            <ion-label position="stacked">ID:</ion-label>
+            <ion-input type="text" name="position" #name="ngModel" [(ngModel)]="employeeService.selectedEmployee.position"></ion-input>
         </ion-item>
         <ion-item>
-            <ion-label position="stacked">Empresa:</ion-label>
-            <ion-input type="text" name="office" #name="ngModel" [(ngModel)]="employeeService.selectedEmployee.office" placeholder="Enter your Office"></ion-input>
+            <ion-label position="stacked">Descripcion:</ion-label>
+            <ion-input type="text" name="office" #name="ngModel" [(ngModel)]="employeeService.selectedEmployee.office"></ion-input>
         </ion-item>
         <ion-item>
-            <ion-label position="stacked">Salario:</ion-label>
-            <ion-input type="text" name="salary" #name="ngModel" [(ngModel)]="employeeService.selectedEmployee.salary" value="0" placeholder="Enter your Salary"></ion-input>
+            <ion-label position="stacked">Precio:</ion-label>
+            <ion-input type="text" name="salary" #name="ngModel" [(ngModel)]="employeeService.selectedEmployee.salary" value="0"></ion-input>
         </ion-item>
         <ion-button class="submit-btn" expand="block" fill="solid" type="submit">Guardar</ion-button>
         <ion-button class="submit-btn" expand="block" fill="solid" (click)="resetForm(employeeForm)">Limpiar</ion-button>
